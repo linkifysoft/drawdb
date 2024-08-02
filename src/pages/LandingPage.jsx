@@ -21,7 +21,7 @@ export default function LandingPage() {
   useEffect(() => {
     document.body.setAttribute("theme-mode", "light");
     document.title =
-      "drawDB | Online database diagram editor and SQL generator";
+      "DbDesign | Online database diagram editor and SQL generator";
   });
 
   return (
@@ -103,7 +103,7 @@ export default function LandingPage() {
           </FadeIn>
           <div className="mt-20 text-center w-[75%] sm:w-full mx-auto shadow-sm rounded-lg border p-12 bg-white">
             <div className="text-2xl font-bold text-slate-900 mb-8">
-              Why drawDB?
+              Why DbDesign?
             </div>
             <div className="grid grid-cols-3 gap-4 md:grid-cols-1 h-full">
               <SlideIn delay={0} duration={0.4} className="h-full">
@@ -115,7 +115,7 @@ export default function LandingPage() {
                     Free
                   </div>
                   <div className="text-sm mt-3">
-                    drawDB is completely free of charge.
+                    DbDesign is completely free of charge.
                   </div>
                 </div>
               </SlideIn>
@@ -152,7 +152,7 @@ export default function LandingPage() {
       <div id="features" className="py-20 px-36 md:px-8">
         <FadeIn duration={1}>
           <div className="text-2xl font-bold text-center">
-            Here is what drawDB offers
+            Here is what DbDesign offers
           </div>
           <div className="text-sm opacity-75 text-center">
             More coming soon...
@@ -227,16 +227,16 @@ export default function LandingPage() {
           <div className="mt-10">
             Connect with us at
             <a
-              href="mailto:drawdb@outlook.com"
+              href="mailto:contact@linkifysoft.com"
               className="text-blue-500 font-semibold hover:underline ms-1.5"
             >
-              drawdb@outlook.com
+              contact@linkifysoft.com
             </a>
           </div>
           <div className="sm:block flex gap-3 justify-center">
             <a
               className="inline-block mt-2"
-              href="https://github.com/drawdb-io/drawdb"
+              href="https://github.com/linkifysoft/drawdb"
               target="_blank"
               rel="noreferrer"
             >
@@ -244,19 +244,6 @@ export default function LandingPage() {
                 <img src={github} className="h-8" />
                 <div className="text-lg text-white font-bold">
                   See the source
-                </div>
-              </div>
-            </a>
-            <a
-              className="inline-block mt-2"
-              href="https://discord.gg/BrjZgNrmR6"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="bg-[#5865f2] hover:opacity-90 transition-all duration-300 flex items-center gap-4 px-8 py-4 rounded-lg">
-                <img src={discord} className="h-8" />
-                <div className="text-lg text-white font-bold">
-                  Join us on Discord
                 </div>
               </div>
             </a>
@@ -269,7 +256,7 @@ export default function LandingPage() {
       </div>
       <hr className="border-zinc-300" />
       <div className="text-center text-sm py-3">
-        &copy; 2024 <strong>drawDB</strong> - All right reserved.
+        &copy; 2024 <strong>linkifysoft</strong> - All right reserved.
       </div>
     </div>
   );

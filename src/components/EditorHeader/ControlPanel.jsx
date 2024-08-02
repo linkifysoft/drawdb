@@ -11,6 +11,7 @@ import {
 } from "@douyinfe/semi-icons";
 import { Link, useNavigate } from "react-router-dom";
 import icon from "../../assets/icon_dark_64.png";
+import LinkifyLogo from "../../svg/Logo";
 import {
   Button,
   Divider,
@@ -1546,12 +1547,7 @@ export default function ControlPanel({
       <nav className="flex justify-between pt-1 items-center whitespace-nowrap">
         <div className="flex justify-start items-center">
           <Link to="/">
-            <img
-              width={54}
-              src={icon}
-              alt="logo"
-              className="ms-8 min-w-[54px]"
-            />
+            <LinkifyLogo currentColor="#000" className='text-3xl ml-2'/>
           </Link>
           <div className="ms-1 mt-1">
             <div className="flex items-center ms-3 gap-2">

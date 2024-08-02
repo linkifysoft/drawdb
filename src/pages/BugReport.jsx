@@ -1,6 +1,5 @@
 import { useEffect, useState, useCallback, useRef } from "react";
-import logo_light from "../assets/logo_light_160.png";
-import logo_dark from "../assets/logo_dark_160.png";
+import LinkifyLogo from "../svg/Logo";
 import { Banner, Button, Input, Upload, Toast, Spin } from "@douyinfe/semi-ui";
 import {
   IconSun,
@@ -162,11 +161,7 @@ export default function BugReport() {
       <div className="sm:py-3 py-5 px-20 sm:px-6 flex justify-between items-center">
         <div className="flex items-center justify-start">
           <Link to="/">
-            <img
-              src={theme === "dark" ? logo_dark : logo_light}
-              alt="logo"
-              className="me-2 sm:h-[28px] md:h-[46px] h-[48px]"
-            />
+            <LinkifyLogo currentColor={theme === "dark" ? "#fff" : "#ccc"} className="text-3xl" />
           </Link>
           <div className="ms-4 sm:text-sm xl:text-lg font-semibold">
             Report a bug
@@ -248,7 +243,7 @@ export default function BugReport() {
               style={{ backgroundColor: "#239144", color: "white" }}
               onClick={() => {
                 window.open(
-                  "https://github.com/drawdb-io/drawdb/issues",
+                  "https://github.com/linkifysoft/drawdb/issues",
                   "_self",
                 );
               }}
@@ -283,7 +278,7 @@ export default function BugReport() {
         } my-1`}
       />
       <div className="text-center text-sm py-3">
-        &copy; 2024 <strong>drawDB</strong> - All right reserved.
+        &copy; 2024 <strong>linkifysoft</strong> - All right reserved.
       </div>
     </>
   );

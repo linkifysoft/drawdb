@@ -1,18 +1,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo_light_160.png";
+import LinkifyLogo from "../svg/Logo"
 import { SideSheet } from "@douyinfe/semi-ui";
 import { IconMenu } from "@douyinfe/semi-icons";
-
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
-
   return (
     <>
       <div className="py-5 px-8 sm:px-4 flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/">
-            <img src={logo} alt="logo" className="me-2 h-[48px] sm:h-[32px]" />
+            <LinkifyLogo currentColor="#ccc" className='text-3xl'/>
           </Link>
           <div className="md:hidden flex space-x-6 ml-6">
             <Link
@@ -43,13 +41,13 @@ export default function Navbar() {
           <a
             title="Jump to Github"
             className="px-3 py-2 bg-zinc-100 hover:opacity-60 transition-all duration-300 rounded-full text-2xl"
-            href="https://github.com/drawdb-io/drawdb"
+            href="https://github.com/linkifysoft/drawdb"
             target="_blank"
             rel="noreferrer"
           >
             <i className="opacity-70 bi bi-github" />
           </a>
-          <a
+          {/* <a
             title="Follow us on X"
             className="px-3 py-2 bg-zinc-100 hover:opacity-60 transition-all duration-300 rounded-full text-2xl"
             href="https://x.com/drawDB_"
@@ -57,8 +55,8 @@ export default function Navbar() {
             rel="noreferrer"
           >
             <i className="opacity-70 bi bi-twitter-x" />
-          </a>
-          <a
+          </a> */}
+          {/* <a
             title="Join the community on Discord"
             className="px-3 py-2 bg-zinc-100 hover:opacity-60 transition-all duration-300 rounded-full text-2xl"
             href="https://discord.gg/BrjZgNrmR6"
@@ -66,7 +64,7 @@ export default function Navbar() {
             rel="noreferrer"
           >
             <i className="opacity-70 bi bi-discord" />
-          </a>
+          </a> */}
         </div>
         <button
           onClick={() => setOpenMenu((prev) => !prev)}
@@ -78,7 +76,7 @@ export default function Navbar() {
       <hr />
       <SideSheet
         title={
-          <img src={logo} alt="logo" className="sm:h-[32px] md:h-[42px]" />
+          <LinkifyLogo currentColor="#ccc" className="sm:h-[32px] md:h-[42px]" />
         }
         visible={openMenu}
         onCancel={() => setOpenMenu(false)}

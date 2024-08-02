@@ -1,6 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
-import logo_light from "../assets/logo_light_160.png";
-import logo_dark from "../assets/logo_dark_160.png";
+import LinkifyLogo from "../svg/Logo";
 import {
   Banner,
   Button,
@@ -252,11 +251,7 @@ export default function Survey() {
       <div className="sm:py-3 py-5 md:px-8 px-20 flex justify-between items-center">
         <div className="flex items-center justify-start">
           <Link to="/">
-            <img
-              src={theme === "dark" ? logo_dark : logo_light}
-              alt="logo"
-              className="me-2 sm:h-[28px] md:h-[46px] h-[48px]"
-            />
+            <LinkifyLogo currentColor={theme === "dark" ? "#fff" : "#ccc"} className="text-3xl" />
           </Link>
           <div className="ms-4 sm:text-sm xl:text-lg font-semibold">
             Share your feedback
@@ -304,7 +299,7 @@ export default function Survey() {
         } my-1`}
       />
       <div className="text-center text-sm py-3">
-        &copy; 2024 <strong>drawDB</strong> - All right reserved.
+        &copy; 2024 <strong>linkifysoft</strong> - All right reserved.
       </div>
     </div>
   );

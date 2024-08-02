@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import logo_light from "../assets/logo_light_160.png";
-import logo_dark from "../assets/logo_dark_160.png";
+import LinkifyLogo from "../svg/Logo";
 import { AutoComplete, Button } from "@douyinfe/semi-ui";
 import { IconSearch, IconSun, IconMoon } from "@douyinfe/semi-icons";
 import { Link } from "react-router-dom";
@@ -54,11 +53,7 @@ export default function Shortcuts() {
       <div className="sm:py-3 py-5 px-20 sm:px-6 flex justify-between items-center">
         <div className="flex items-center justify-start">
           <Link to="/">
-            <img
-              src={theme === "dark" ? logo_dark : logo_light}
-              alt="logo"
-              className="me-2 sm:h-[28px] md:h-[46px] h-[48px]"
-            />
+            <LinkifyLogo currentColor={theme === "dark" ? "#fff" : "#ccc"} className="me-2 sm:h-[28px] md:h-[46px] h-[48px]" />
           </Link>
           <div className="ms-4 sm:text-sm xl:text-lg font-semibold">
             Keyboard shortcuts
@@ -136,7 +131,7 @@ export default function Shortcuts() {
         } my-1`}
       />
       <div className="text-center text-sm py-3">
-        &copy; 2024 <strong>drawDB</strong> - All right reserved.
+        &copy; 2024 <strong>linkifysoft</strong> - All right reserved.
       </div>
     </>
   );

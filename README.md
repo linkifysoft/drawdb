@@ -23,7 +23,7 @@ DrawDB is a robust and user-friendly database entity relationship (DBER) editor 
 ### Local Development
 
 ```bash
-git clone https://github.com/drawdb-io/drawdb
+git clone https://github.com/linkifysoft/drawdb
 cd drawdb
 npm install
 npm run dev
@@ -32,7 +32,7 @@ npm run dev
 ### Build
 
 ```bash
-git clone https://github.com/drawdb-io/drawdb
+git clone https://github.com/linkifysoft/drawdb
 cd drawdb
 npm install
 npm run build
@@ -45,4 +45,4 @@ docker build -t drawdb .
 docker run -p 3000:80 drawdb
 ```
 
-Set up the [server](https://github.com/drawdb-io/drawdb-server) and environment variables according to `.env.sample` for the survey and bug report forms.
+Set up the [server](https://github.com/linkifysoft/drawdb-server) and environment variables according to `.env.sample` for the survey and bug report forms.
