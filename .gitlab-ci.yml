@@ -22,4 +22,4 @@ dockerize-and-push:
   variables:
     AWS_ECR_IMAGE: linkifysoft/drawdb
     IMAGE_TAG: $CI_COMMIT_TAG
-    MULTI_PLATFORM: 'false'
+    MULTI_PLATFORM: 'true'
