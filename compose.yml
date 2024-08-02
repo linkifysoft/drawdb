@@ -1,16 +1,10 @@
+version: '3'
 services:
-  drawdb:
-    image: node:20-alpine
+  app:
+    image: linkifysoft/drawdb:latest
     container_name: drawdb
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - 5173:5173
-    working_dir: /var/www/html
-    volumes:
-      - ./:/var/www/html
-    command: sh -c "npm install && npm run dev -- --host"
-    networks:
-      - default
-
-networks:
-  default:
-    driver: bridge
+      - 3010:80
