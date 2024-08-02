@@ -14,7 +14,8 @@ workflow:
 stages:
   - build
   - deploy
-build-opsweaver-kas:
+
+dockerize-and-push:
   stage: build
   extends:
     - .aws-multiplatform-ecr
